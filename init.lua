@@ -19,8 +19,12 @@ require("lazy").setup({
 	"junegunn/seoul256.vim",
 	{ "folke/which-key.nvim", opts = {} },
 	{
+		"simrat39/rust-tools.nvim",
+		dependencies = { "neovim/nvim-lspconfig" },
+	},
+	{
 		'nvim-telescope/telescope.nvim',
 		tag = '0.1.4',
-		dependencies = { 'nvim-lua/plenary.nvim' }
+		dependencies = { 'nvim-lua/plenary.nvim' },
 	}
 })
